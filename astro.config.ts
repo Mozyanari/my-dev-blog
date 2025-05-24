@@ -8,8 +8,8 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
 	// site: SITE.website,
-	site: "https://mozyanari.github.io/my-dev-blog",
-	output: "static",
+	site: "https://mozyanari.github.io/",
+	base: "/my-dev-blog",
 	integrations: [
 		sitemap({
 			filter: (page) => SITE.showArchives || !page.endsWith("/archives"),
